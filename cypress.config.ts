@@ -5,6 +5,8 @@ const { archiveCypress } = require("@chromaui/test-archiver/cypress");
 
 export default defineConfig({
   component: {
+    screenshotsFolder:
+      "/Users/rr/DevOps/cypress-test/cypress/downloads/chromatic-archives/archive",
     specPattern: "cypress/component/**/*.cy.{js,jsx,ts,tsx}",
     devServer: {
       framework: "vue-cli",
@@ -34,6 +36,8 @@ export default defineConfig({
   },
 
   e2e: {
+    screenshotsFolder:
+      "/Users/rr/DevOps/cypress-test/cypress/downloads/chromatic-archives/archive",
     baseUrl: "http://localhost:8080",
     specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
     setupNodeEvents(on, config) {

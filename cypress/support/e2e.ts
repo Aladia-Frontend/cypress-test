@@ -18,4 +18,13 @@ import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-import "@chromaui/test-archiver/cypress/support";
+Cypress.on("test:after:run", (test, runnable) => {
+  const parentTitle = runnable?.parent?.title || "Unknown Parent";
+  const testTitle = test?.title || "Unknown Test";
+
+  if (test.state === "failed") {
+    cy.screenshot(`${parentTitle} -- ${testTitle} (failed)`);
+  } else {
+    cy.screenshot(`${parentTitle} -- ${testTitle} (step)`);
+  }
+});
