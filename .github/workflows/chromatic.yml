@@ -30,6 +30,6 @@ jobs:
           pnpm install
 
       - name: Run Cypress Tests with Chromatic
-      run: |
-        ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 npx cypress run
-        npx chromatic --cypress --project-token=${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+        run: |
+          ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 npx cypress run
+          npx chromatic --cypress --project-token=${{ secrets.CHROMATIC_PROJECT_TOKEN }}
