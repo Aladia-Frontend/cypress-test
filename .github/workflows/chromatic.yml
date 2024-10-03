@@ -1,27 +1,48 @@
-# .github/workflows/chromatic.yml
+name: CI
 
-# Workflow name
-name: "Chromatic Publish"
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - "**"
 
-# Event for the workflow
-on: push
-
-# List of jobs
 jobs:
-  test:
-    # Operating System
+  build:
     runs-on: ubuntu-latest
-    # Job steps
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v2
         with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
+          ref: ${{ github.head_ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 20
-          cache: "yarn"
-      - run: yarn
-      - uses: chromaui/action@v1
-        with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: "20"
+
+      - name: Install pnpm
+        run: |
+          npm install -g pnpm
+
+      - name: Install dependencies
+        run: |
+          pnpm install
+
+      - name: Run build
+        run: |
+          pnpm run build
+
+      - name: Run tests
+        run: |
+          pnpm run test
+
+      - name: Build Storybook
+        run: |
+          pnpm build-storybook
+
+      - name: Publish to Chromatic
+        run: |
+          npx chromatic --project-token=chpt_8425323d910bbc6
