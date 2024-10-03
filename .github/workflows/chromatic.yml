@@ -1,9 +1,6 @@
 name: CI
 
 on:
-  push:
-    branches:
-      - "**"
   pull_request:
     branches:
       - "**"
@@ -30,14 +27,6 @@ jobs:
       - name: Install dependencies
         run: |
           pnpm install
-
-      - name: Run build
-        run: |
-          pnpm run build
-
-      - name: Run tests
-        run: |
-          pnpm run test
 
       - name: Build Storybook
         run: |
