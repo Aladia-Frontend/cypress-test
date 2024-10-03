@@ -1,6 +1,7 @@
 import { prepareArchives } from "@chromaui/test-archiver/cypress";
 import { defineConfig } from "cypress";
 const { installPlugin } = require("@chromatic-com/cypress");
+const { archiveCypress } = require("@chromaui/test-archiver/cypress");
 
 export default defineConfig({
   component: {
@@ -17,6 +18,7 @@ export default defineConfig({
 
       on("task", {
         prepareArchives,
+        archiveCypress,
       });
 
       on("before:browser:launch", (browser = {}, launchOptions) => {
@@ -42,6 +44,7 @@ export default defineConfig({
 
       on("task", {
         prepareArchives,
+        archiveCypress,
       });
 
       on("before:browser:launch", (browser = {}, launchOptions) => {

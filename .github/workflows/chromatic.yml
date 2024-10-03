@@ -29,6 +29,16 @@ jobs:
         run: |
           pnpm install
 
+      - name: Start Application
+        run: |
+          pnpm run serve &
+        env:
+          VITE_BASE_URL: http://localhost:8080 # Adjust if necessary
+
+      - name: Wait for application to start
+        run: |
+          npx wait-on http://localhost:8080
+
       - name: Publish to Chromatic
         uses: chromaui/action@v1
         with:
