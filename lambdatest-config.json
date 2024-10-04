@@ -17,18 +17,32 @@
   ],
   "run_settings": {
     "reporter_config_file": "base_reporter_config.json",
-    "build_name": "build-name",
+    "build_name": "new-build-name",
     "parallels": 1,
     "specs": "cypress/e2e/**/*.cy.js",
     "ignore_files": "",
     "network": false,
     "headless": false,
     "npm_dependencies": {
-      "cypress": "10"
+      "cypress": "^13.15.0",
+      "cypress-xpath": "^2.0.1",
+      "mochawesome": "^7.1.3",
+      "mochawesome-report-generator": "^6.2.0",
+      "start-server-and-test": "^2.0.8",
+      "@babel/core": "^7.12.16",
+      "@babel/eslint-parser": "^7.12.16",
+      "@vue/cli-plugin-babel": "~5.0.0",
+      "@vue/cli-plugin-eslint": "~5.0.0",
+      "@vue/cli-service": "~5.0.0",
+      "eslint": "^7.32.0",
+      "eslint-plugin-vue": "^8.0.3"
+    },
+    "smart_ui": {
+      "project": "cypress-test"
     }
   },
   "tunnel_settings": {
-    "tunnel": false,
-    "tunnel_name": null
+    "tunnel": true,
+    "tunnel_name": "LT_Tunnel"
   }
 }

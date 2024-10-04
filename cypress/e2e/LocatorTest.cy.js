@@ -10,6 +10,7 @@ describe("Locator Test", () => {
     cy.get("#username").type("TestUser");
     cy.get(".primary-button").click();
     cy.get("ul > li").should("have.length", 3);
+    cy.screenshot("cypress");
   });
 
   it("Find elements using XPath", () => {
@@ -20,5 +21,6 @@ describe("Locator Test", () => {
     cy.xpath('//input[@id="password"]').type("TestPassword");
     cy.xpath('//button[contains(@class, "secondary-button")]').click();
     cy.xpath('//li[text()="Item 2"]').should("exist");
+    cy.screenshot("cypress");
   });
 });

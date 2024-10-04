@@ -97,9 +97,9 @@ export default {
 }
 
 .item {
-    padding: 10px;
+    padding: 20px;
     background-color: #fff;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
+    margin-bottom: 30px;
+    border: 10px solid #ddd;
 }
 </style>

@@ -24,7 +24,8 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "mochawesome": "^7.1.3",
-    "mochawesome-report-generator": "^6.2.0"
+    "mochawesome-report-generator": "^6.2.0",
+    "start-server-and-test": "^2.0.8"
   },
   "eslintConfig": {
     "root": true,
