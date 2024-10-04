@@ -1,0 +1,12 @@
+
+.ribbon[data-v-b9303bc9] {
+  /* https://css-tricks.com/the-shapes-of-css/#aa-trapezoid-shape */
+  transform: rotate(45deg);
+  border-bottom: 25px solid #C2F1DE; /* Primary/Jade/100 */
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 10px;
+  width: 100px;
+  top: 14px !important;
+  right: -24px !important;
+}
