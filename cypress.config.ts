@@ -1,7 +1,9 @@
-import { prepareArchives } from "@chromaui/test-archiver/cypress";
 import { defineConfig } from "cypress";
 const { installPlugin } = require("@chromatic-com/cypress");
-const { archiveCypress } = require("@chromaui/test-archiver/cypress");
+
+// Removed imports from @chromaui/test-archiver
+// import { prepareArchives } from "@chromaui/test-archiver/cypress";
+// const { archiveCypress } = require("@chromaui/test-archiver/cypress");
 
 export default defineConfig({
   component: {
@@ -13,10 +15,11 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       installPlugin(on, config);
 
-      on("task", {
-        prepareArchives,
-        archiveCypress,
-      });
+      // Removed tasks from @chromaui/test-archiver
+      // on("task", {
+      //   prepareArchives,
+      //   archiveCypress,
+      // });
 
       on("before:browser:launch", (browser = {}, launchOptions) => {
         if (browser.name === "chrome" && browser.isHeadless) {
@@ -38,10 +41,11 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       installPlugin(on, config);
 
-      on("task", {
-        prepareArchives,
-        archiveCypress,
-      });
+      // Removed tasks from @chromaui/test-archiver
+      // on("task", {
+      //   prepareArchives,
+      //   archiveCypress,
+      // });
 
       on("before:browser:launch", (browser = {}, launchOptions) => {
         if (browser.name === "chrome" && browser.isHeadless) {

@@ -3,7 +3,7 @@ import "cypress-xpath";
 describe("Locator Test", () => {
   context("Desktop Viewport", () => {
     beforeEach(() => {
-      cy.viewport(1200, 800); // Set viewport to desktop size
+      cy.viewport(1200, 800);
       cy.visit("/locator-test/");
     });
 
@@ -27,7 +27,7 @@ describe("Locator Test", () => {
 
   context("Mobile Viewport", () => {
     beforeEach(() => {
-      cy.viewport(320, 568); // Set viewport to mobile size
+      cy.viewport(320, 568);
       cy.visit("/locator-test/");
     });
 

@@ -22,7 +22,6 @@
   "devDependencies": {
     "@chromatic-com/cypress": "^0.8.0",
     "@chromatic-com/storybook": "^2.0.2",
-    "@chromaui/test-archiver": "^0.0.56",
     "@cypress/vue": "^6.0.1",
     "@storybook/addon-essentials": "^8.3.5",
     "@storybook/addon-interactions": "^8.3.5",
