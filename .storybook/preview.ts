@@ -12,3 +12,7 @@ const preview: Preview = {
 };
 
 export default preview;
+
+export const parameters = {
+  chromatic: { viewports: [320, 1200] },
+};

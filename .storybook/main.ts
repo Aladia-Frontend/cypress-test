@@ -14,6 +14,7 @@ const config: StorybookConfig = {
     "@storybook/addon-actions",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
+    "@storybook/addon-viewport",
   ],
   framework: {
     name: "@storybook/vue3-vite",

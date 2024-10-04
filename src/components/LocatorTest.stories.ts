@@ -1,12 +1,15 @@
-import type { Meta, StoryFn } from "@storybook/vue3";
-import LocatorTest from "../components/LocatorTest.vue";
+import { Meta, StoryFn } from "@storybook/vue3";
+import LocatorTest from "./LocatorTest.vue";
 
 export default {
-  title: "LocatorTest",
+  title: "Components/LocatorTest",
   component: LocatorTest,
-} as Meta;
+  parameters: {
+    chromatic: { viewports: [320, 1200] },
+  },
+} as Meta<typeof LocatorTest>;
 
-const Template: StoryFn = (args) => ({
+const Template: StoryFn<typeof LocatorTest> = (args) => ({
   components: { LocatorTest },
   setup() {
     return { args };
