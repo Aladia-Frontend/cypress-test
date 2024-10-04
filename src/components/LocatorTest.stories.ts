@@ -1,11 +1,17 @@
-import { Meta, StoryFn } from "@storybook/vue3";
+import type { Meta, StoryFn } from "@storybook/vue3";
+import { allModes } from "../../.storybook/modes";
 import LocatorTest from "./LocatorTest.vue";
 
 export default {
   title: "Components/LocatorTest",
   component: LocatorTest,
   parameters: {
-    chromatic: { viewports: [320, 1200] },
+    chromatic: {
+      modes: {
+        mobile: allModes.mobile,
+        desktop: allModes.desktop,
+      },
+    },
   },
 } as Meta<typeof LocatorTest>;
 
