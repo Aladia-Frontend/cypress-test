@@ -18,4 +18,3 @@ import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-import "@chromaui/test-archiver/cypress/support";

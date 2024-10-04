@@ -7,8 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_8425323d910bbc6"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@storybook/addon-actions": "^8.3.5",
@@ -20,9 +19,6 @@
     "vuex": "^4.1.0"
   },
   "devDependencies": {
-    "@chromatic-com/cypress": "^0.8.0",
-    "@chromatic-com/storybook": "^2.0.2",
-    "@chromaui/test-archiver": "^0.0.56",
     "@cypress/vue": "^6.0.1",
     "@storybook/addon-essentials": "^8.3.5",
     "@storybook/addon-interactions": "^8.3.5",
@@ -43,7 +39,6 @@
     "@vue/cli-service": "~5.0.8",
     "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/test-utils": "^2.4.6",
-    "chromatic": "^11.11.0",
     "cypress": "^13.15.0",
     "cypress-xpath": "^2.0.1",
     "storybook": "^8.3.5",
