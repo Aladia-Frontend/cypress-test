@@ -19,8 +19,12 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "cypress": "^13.15.0",
+    "cypress-xpath": "^2.0.1",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-vue": "^8.0.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0"
   },
   "eslintConfig": {
     "root": true,
