@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>cypress/e2e/my-first-e2e.cy.ts</title>
+    <title>cypress/e2e/App.cy.ts</title>
   </head>
   <body>
     <script>
@@ -254,13 +254,13 @@
 ({
       browserFamily: 'chromium',
       isSpecBridge: false,
-      key: 'bdbfed69-a741-4b51-a338-daa928a266d2',
+      key: '2cc0e3c2-5dc4-4a96-a4b5-1d4c2623b883',
       namespace: '__cypress',
-      scripts: '["/__cypress/tests?p=cypress/support/e2e.ts","/__cypress/tests?p=cypress/e2e/my-first-e2e.cy.ts"]',
-      url: 'http://localhost:8080/__cypress/iframes/cypress%2Fe2e%2Fmy-first-e2e.cy.ts?browserFamily=chromium'
+      scripts: '["/__cypress/tests?p=cypress/support/e2e.ts","/__cypress/tests?p=cypress/e2e/App.cy.ts"]',
+      url: 'http://localhost:8080/__cypress/iframes/cypress%2Fe2e%2FApp.cy.ts?browserFamily=chromium'
     })</script>
     <script>
-      window.Cypress.onSpecWindow(window, [{"absolute":"/Users/rr/DevOps/cypress-test/cypress/support/e2e.ts","relative":"cypress/support/e2e.ts","relativeUrl":"/__cypress/tests?p=cypress/support/e2e.ts"},{"absolute":"/Users/rr/DevOps/cypress-test/cypress/e2e/my-first-e2e.cy.ts","relative":"cypress/e2e/my-first-e2e.cy.ts","relativeUrl":"/__cypress/tests?p=cypress/e2e/my-first-e2e.cy.ts"}]);
+      window.Cypress.onSpecWindow(window, [{"absolute":"/Users/rr/DevOps/cypress-test/cypress/support/e2e.ts","relative":"cypress/support/e2e.ts","relativeUrl":"/__cypress/tests?p=cypress/support/e2e.ts"},{"absolute":"/Users/rr/DevOps/cypress-test/cypress/e2e/App.cy.ts","relative":"cypress/e2e/App.cy.ts","relativeUrl":"/__cypress/tests?p=cypress/e2e/App.cy.ts"}]);
     </script>
   </body>
 </html>

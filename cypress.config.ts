@@ -34,6 +34,7 @@ export default defineConfig({
   },
 
   e2e: {
+    experimentalStudio: true,
     viewportWidth: 1000,
     viewportHeight: 660,
     baseUrl: "http://localhost:8080",

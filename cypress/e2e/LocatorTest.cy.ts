@@ -48,4 +48,18 @@ describe("Locator Test", () => {
       cy.xpath('//li[text()="Item 2"]').should("exist");
     });
   });
+
+  /* ==== Test Created with Cypress Studio ==== */
+  it("primo test Rambod", function () {
+    /* ==== Generated with Cypress Studio ==== */
+    cy.visit("Test Generato con Cypress Studio");
+    cy.get('[href="/"] > button').click();
+    cy.get('[href="/about"] > button').click();
+    cy.get('[href="/locator-test"] > button').click();
+    cy.get("#username").type("rambodrahmani@aladia.io");
+    cy.get("#password").clear();
+    cy.get("#password").type("ramtin");
+    cy.get("#submit-button").click();
+    /* ==== End Cypress Studio ==== */
+  });
 });
