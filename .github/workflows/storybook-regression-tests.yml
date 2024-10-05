@@ -33,4 +33,4 @@ jobs:
 
       - name: Publish to Chromatic
         run: |
-          npx chromatic --project-token=${{ secrets.CHROMATIC_PROJECT_TOKEN }} --exit-zero-on-changes --merge --external-id=${{ github.sha }} --no-interactive
+          npx chromatic --project-token=${{ secrets.CHROMATIC_PROJECT_TOKEN }} --exit-zero-on-changes
