@@ -1,6 +1,9 @@
-import { prepareArchives } from "@chromaui/test-archiver/cypress";
 import { defineConfig } from "cypress";
 const { installPlugin } = require("@chromatic-com/cypress");
+
+// Removed imports from @chromaui/test-archiver
+// import { prepareArchives } from "@chromaui/test-archiver/cypress";
+// const { archiveCypress } = require("@chromaui/test-archiver/cypress");
 
 export default defineConfig({
   component: {
@@ -10,14 +13,13 @@ export default defineConfig({
       bundler: "webpack",
     },
     setupNodeEvents(on, config) {
-      process.env.CHROMATIC_ARCHIVE_LOCATION =
-        "/Users/rr/DevOps/cypress-test/cypress/screenshots/";
-
       installPlugin(on, config);
 
-      on("task", {
-        prepareArchives,
-      });
+      // Removed tasks from @chromaui/test-archiver
+      // on("task", {
+      //   prepareArchives,
+      //   archiveCypress,
+      // });
 
       on("before:browser:launch", (browser = {}, launchOptions) => {
         if (browser.name === "chrome" && browser.isHeadless) {
@@ -32,17 +34,19 @@ export default defineConfig({
   },
 
   e2e: {
+    experimentalStudio: true,
+    viewportWidth: 1000,
+    viewportHeight: 660,
     baseUrl: "http://localhost:8080",
     specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
     setupNodeEvents(on, config) {
-      process.env.CHROMATIC_ARCHIVE_LOCATION =
-        "/Users/rr/DevOps/cypress-test/cypress/screenshots/";
-
       installPlugin(on, config);
 
-      on("task", {
-        prepareArchives,
-      });
+      // Removed tasks from @chromaui/test-archiver
+      // on("task", {
+      //   prepareArchives,
+      //   archiveCypress,
+      // });
 
       on("before:browser:launch", (browser = {}, launchOptions) => {
         if (browser.name === "chrome" && browser.isHeadless) {

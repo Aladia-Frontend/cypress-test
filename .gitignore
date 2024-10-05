@@ -16,3 +16,4 @@ dist
 temp
 types/v3-generated.d.ts
 *storybook.log
+storybook-static

@@ -1,0 +1,24 @@
+
+.spinner circle[data-v-16f1736f] {
+  stroke-dasharray: 30 115;
+  stroke-dashoffset: 145;
+  animation: dash-16f1736f linear 1s infinite;
+  stroke: #69D3A7;
+}
+.spinner > path[data-v-16f1736f],
+.spinner > rect[data-v-16f1736f] {
+  fill: #1B1E2E;
+}
+@keyframes dash-16f1736f {
+20% {
+    stroke-dasharray: 45 100;
+}
+67% {
+    stroke-dasharray: 10 135;
+    stroke-dashoffset: 50;
+}
+to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 30 115;
+}
+}
