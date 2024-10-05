@@ -100,6 +100,6 @@ export default {
     padding: 10px;
     background-color: #fff;
     margin-bottom: 10px;
-    border: 10px solid #ddd;
+    border: 10px solid #ff0000;
 }
 </style>
