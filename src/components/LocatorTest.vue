@@ -34,42 +34,6 @@ export default {
 </script>
 
 <style scoped>
-.locator-test {
-    padding: 20px;
-    background-color: #f5f5f5;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.header {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    margin-right: 10px;
-    min-width: 80px;
-}
-
-.form-input {
-    padding: 10px;
-    width: 100%;
-    max-width: 300px;
-}
-
-.button-group {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    /* Center the buttons */
-}
-
 .primary-button {
     background-color: #42b983;
     color: white;
@@ -77,6 +41,14 @@ export default {
     border: none;
     cursor: pointer;
     margin-right: 10px;
+    /* Added border-radius and box-shadow */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.primary-button:hover {
+    background-color: #379f7a;
+    /* Slightly darker on hover */
 }
 
 .secondary-button {
@@ -85,22 +57,13 @@ export default {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    /* Added border-radius and box-shadow */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.info-text {
-    margin-top: 30px;
-    color: #666;
-}
-
-.item-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.item {
-    padding: 10px;
-    background-color: #fff;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
+.secondary-button:hover {
+    background-color: #c7c7c7;
+    /* Slightly darker on hover */
 }
 </style>

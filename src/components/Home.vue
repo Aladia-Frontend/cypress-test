@@ -48,21 +48,28 @@ export default defineComponent({
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-
 ul {
-  list-style-type: none;
+  list-style-type: square;
+  /* Changed from none to square */
   padding: 0;
 }
 
 li {
-  display: inline-block;
-  margin: 0 10px;
+  display: block;
+  /* Changed from inline-block to block */
+  margin: 10px 0;
 }
 
 a {
   color: #42b983;
+  text-decoration: none;
+  /* Added font weight and transition */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #2c3e50;
+  /* Change color on hover */
 }
 </style>
