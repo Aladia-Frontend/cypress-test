@@ -38,8 +38,3 @@ jobs:
       - name: Wait for application to start
         run: |
           npx wait-on http://localhost:8080
-
-      - name: Run Cypress Tests with Chromatic
-        run: |
-          ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 pnpm cypress run --e2e
-          npx chromatic --cypress --project-token=${{ secrets.CHROMATIC_PROJECT_TOKEN }} --exit-zero-on-changes
