@@ -32,9 +32,5 @@ jobs:
         run: pnpm run build-storybook
 
       - name: Publish to Chromatic
-        uses: chromaui/action@v1
-        with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          autoAcceptChanges: false
-          exitOnceUploaded: true
-          args: "--merge --external-id=${{ github.sha }} --no-interactive"
+        run: |
+          npx chromatic --project-token=${{ secrets.CHROMATIC_PROJECT_TOKEN }} --exit-zero-on-changes --merge --external-id=${{ github.sha }} --no-interactive
