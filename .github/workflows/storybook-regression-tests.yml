@@ -37,6 +37,4 @@ jobs:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           autoAcceptChanges: false
           exitOnceUploaded: true
-          merge: true
-          externalId: ${{ github.sha }}
-          noInteractive: true
+          args: "--merge --external-id=${{ github.sha }} --no-interactive"
