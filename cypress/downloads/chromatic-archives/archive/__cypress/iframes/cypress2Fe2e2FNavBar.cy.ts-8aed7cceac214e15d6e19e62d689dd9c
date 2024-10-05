@@ -254,7 +254,7 @@
 ({
       browserFamily: 'chromium',
       isSpecBridge: false,
-      key: 'd6a3dc10-6d89-43ea-ae71-9727e6b629fb',
+      key: 'aced08bc-feea-4a6e-82aa-cd536cc40429',
       namespace: '__cypress',
       scripts: '["/__cypress/tests?p=cypress/support/e2e.ts","/__cypress/tests?p=cypress/e2e/NavBar.cy.ts"]',
       url: 'http://localhost:8080/__cypress/iframes/cypress%2Fe2e%2FNavBar.cy.ts?browserFamily=chromium'

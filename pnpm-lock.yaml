@@ -114,6 +114,9 @@ importers:
       storybook:
         specifier: ^8.3.5
         version: 8.3.5
+      storybook-vue3-router:
+        specifier: ^5.0.0
+        version: 5.0.0(@storybook/preview-api@8.3.5(storybook@8.3.5))(@storybook/vue3@8.3.5(storybook@8.3.5)(vue@3.5.11(typescript@5.6.2)))(vue-router@4.4.5(vue@3.5.11(typescript@5.6.2)))(vue@3.5.11(typescript@5.6.2))
       typescript:
         specifier: ~5.6.2
         version: 5.6.2
@@ -6079,6 +6082,19 @@ packages:
   statuses@2.0.1:
     resolution: {integrity: sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==}
     engines: {node: '>= 0.8'}
+
+  storybook-vue3-router@5.0.0:
+    resolution: {integrity: sha512-Q5ePPv8xyYT+9IzcEMSAQeCT8OlPDX0rfUfYCmiYDXsGPvvDej2Oyid3wyaxZmU/LXt1XzMDRO3v9qk/EN6pXg==}
+    peerDependencies:
+      '@storybook/preview-api': 7.x||>=7.0.0-rc.0
+      '@storybook/vue3': 7.x||>=7.0.0-rc.0
+      vue: 3.x
+      vue-router: 4.x
+    peerDependenciesMeta:
+      vue:
+        optional: true
+      vue-router:
+        optional: true
 
   storybook@8.3.5:
     resolution: {integrity: sha512-hYQVtP2l+3kO8oKDn4fjXXQYxgTRsj/LaV6lUMJH0zt+OhVmDXKJLxmdUP4ieTm0T8wEbSYosFavgPcQZlxRfw==}
@@ -13883,6 +13899,14 @@ snapshots:
   statuses@1.5.0: {}
 
   statuses@2.0.1: {}
+
+  storybook-vue3-router@5.0.0(@storybook/preview-api@8.3.5(storybook@8.3.5))(@storybook/vue3@8.3.5(storybook@8.3.5)(vue@3.5.11(typescript@5.6.2)))(vue-router@4.4.5(vue@3.5.11(typescript@5.6.2)))(vue@3.5.11(typescript@5.6.2)):
+    dependencies:
+      '@storybook/preview-api': 8.3.5(storybook@8.3.5)
+      '@storybook/vue3': 8.3.5(storybook@8.3.5)(vue@3.5.11(typescript@5.6.2))
+    optionalDependencies:
+      vue: 3.5.11(typescript@5.6.2)
+      vue-router: 4.4.5(vue@3.5.11(typescript@5.6.2))
 
   storybook@8.3.5:
     dependencies:
