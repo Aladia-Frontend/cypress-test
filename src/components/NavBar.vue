@@ -30,19 +30,14 @@ export default defineComponent({
 button {
   padding: 10px 20px;
   margin: 10px;
-  /* Updated background to a gradient */
-  background: linear-gradient(135deg, #42b983, #2c3e50);
+  background-color: #42b983;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  /* Added transition effect */
-  transition: background 0.3s, transform 0.2s;
 }
 
 button:hover {
-  /* Reverse gradient on hover and add slight scale */
-  background: linear-gradient(135deg, #2c3e50, #42b983);
-  transform: scale(1.05);
+  background-color: #2c3e50;
 }
 </style>
