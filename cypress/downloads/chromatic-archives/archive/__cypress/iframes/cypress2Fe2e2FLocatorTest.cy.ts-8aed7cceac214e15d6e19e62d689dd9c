@@ -254,7 +254,7 @@
 ({
       browserFamily: 'chromium',
       isSpecBridge: false,
-      key: 'f30a148d-41e8-499b-99e1-2a0e2a79860c',
+      key: '000fa4d2-4d42-489a-ae52-972e7d42ac8e',
       namespace: '__cypress',
       scripts: '["/__cypress/tests?p=cypress/support/e2e.ts","/__cypress/tests?p=cypress/e2e/LocatorTest.cy.ts"]',
       url: 'http://localhost:8080/__cypress/iframes/cypress%2Fe2e%2FLocatorTest.cy.ts?browserFamily=chromium'
