@@ -1,5 +1,3 @@
-// Home.stories.ts
-import { Meta, StoryFn } from "@storybook/vue3";
 import Home from "./Home.vue";
 
 export default {
@@ -8,9 +6,9 @@ export default {
   argTypes: {
     msg: { control: "text" },
   },
-} as Meta;
+};
 
-const Template: StoryFn = (args) => ({
+const Template = (args) => ({
   components: { Home },
   setup() {
     return { args };

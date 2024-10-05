@@ -1,6 +1,3 @@
-// NavBar.stories.ts
-import { Meta, StoryFn } from "@storybook/vue3";
-import { RouteRecordRaw } from "vue-router";
 import About from "./About.vue";
 import Home from "./Home.vue";
 import LocatorTest from "./LocatorTest.vue";
@@ -9,9 +6,9 @@ import NavBar from "./NavBar.vue";
 export default {
   title: "NavBar",
   component: NavBar,
-} as Meta;
+};
 
-const mockRoutes: Array<RouteRecordRaw> = [
+const mockRoutes = [
   {
     path: "/",
     name: "Home",
@@ -32,7 +29,7 @@ const mockRoutes: Array<RouteRecordRaw> = [
   },
 ];
 
-const Template: StoryFn = (args) => ({
+const Template = (args) => ({
   components: { NavBar },
   setup() {
     return { args };

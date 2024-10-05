@@ -1,0 +1,281 @@
+{"level":"debug","time":"2024-10-05T16:25:47.512+0200","caller":"ulimit/ulimit.go:35","msg":"File descriptor limit 138240"}
+{"level":"info","time":"2024-10-05T16:25:47.597+0200","caller":"cmd/lt.go:207","msg":"LambdaTest Tunnel version: 3.2.1"}
+{"level":"debug","time":"2024-10-05T16:25:47.597+0200","caller":"core/lifecycle.go:41","msg":"Starting pipeline....."}
+{"level":"debug","time":"2024-10-05T16:25:47.597+0200","caller":"core/lifecycle.go:42","msg":"OS: darwin, Arch: arm64"}
+{"level":"debug","time":"2024-10-05T16:25:47.597+0200","caller":"core/lifecycle.go:43","msg":"Fetching config"}
+{"level":"debug","time":"2024-10-05T16:25:47.597+0200","caller":"core/lifecycle.go:65","msg":"Starting tunnel With flags: --user rambodrahmani --key ***** --tunnelName LT_Tunnel -v --env prod --controller npm --infoAPIPort 58150 --logFile Rambods-MacBook-Pro.local58150.log --port 58151"}
+{"level":"debug","time":"2024-10-05T16:25:47.839+0200","caller":"core/lifecycle.go:83","msg":"Remote config fetched"}
+{"level":"debug","time":"2024-10-05T16:25:47.876+0200","caller":"apiserver/setup.go:166","msg":"Starting API server"}
+{"level":"debug","time":"2024-10-05T16:25:47.876+0200","caller":"networkscanner/setup.go:191","msg":"Trying on port 443"}
+{"level":"debug","time":"2024-10-05T16:25:47.876+0200","caller":"custom/setup.go:918","msg":"Starting sink proxy"}
+{"level":"debug","time":"2024-10-05T16:25:47.876+0200","caller":"networkscanner/setup.go:137","msg":"Trying over ssh over ws"}
+{"level":"debug","time":"2024-10-05T16:25:47.876+0200","caller":"networkscanner/setup.go:69","msg":"Trying on port 22"}
+{"level":"debug","time":"2024-10-05T16:25:47.876+0200","caller":"networkscanner/setup.go:103","msg":"Trying on port 443"}
+{"level":"debug","time":"2024-10-05T16:25:47.876+0200","caller":"apiserver/setup.go:148","msg":"Starting API server for tunnel info on port: 58150"}
+{"level":"info","time":"2024-10-05T16:25:47.876+0200","caller":"custom/setup.go:861","msg":"Tunnel binary started on port :58151"}
+{"level":"debug","time":"2024-10-05T16:25:47.895+0200","caller":"networkscanner/setup.go:207","msg":"TCP connection was successful"}
+{"level":"debug","time":"2024-10-05T16:25:47.931+0200","caller":"networkscanner/setup.go:154","msg":"WSS connection was successful"}
+{"level":"debug","time":"2024-10-05T16:25:48.657+0200","caller":"networkscanner/setup.go:90","msg":"SSH connection over port 22 successful"}
+{"level":"debug","time":"2024-10-05T16:25:48.675+0200","caller":"networkscanner/setup.go:179","msg":"SSH connection over ws successful"}
+{"level":"debug","time":"2024-10-05T16:25:48.683+0200","caller":"networkscanner/setup.go:124","msg":"SSH connection over port 443 successful"}
+{"level":"info","time":"2024-10-05T16:25:48.683+0200","caller":"core/lifecycle.go:121","msg":"Using ssh(over_22) :: connection mode"}
+{"level":"info","time":"2024-10-05T16:25:48.683+0200","caller":"core/lifecycle.go:271","msg":"Launching tunnel"}
+{"level":"debug","time":"2024-10-05T16:25:48.683+0200","caller":"ws/control.go:34","msg":"Starting control ws connection at wss://ts.lambdatest.com/monitor"}
+{"level":"debug","time":"2024-10-05T16:25:48.881+0200","caller":"ws/control.go:72","msg":"Control ws channel opened"}
+{"level":"debug","time":"2024-10-05T16:25:48.881+0200","caller":"ws/control.go:131","msg":"Starting message listener on control connection"}
+{"level":"debug","time":"2024-10-05T16:25:49.636+0200","caller":"tunnelmanager/controller.go:150","msg":"otel disabled"}
+{"level":"debug","time":"2024-10-05T16:25:49.636+0200","caller":"core/lifecycle.go:370","msg":"Sending tunnel registered message to channels"}
+{"level":"debug","time":"2024-10-05T16:25:49.636+0200","caller":"ws/control.go:196","msg":"Tunnel registered message received on control channel"}
+{"level":"debug","time":"2024-10-05T16:25:49.636+0200","caller":"ssh/setup.go:71","msg":"Using 5 ssh connection"}
+{"level":"debug","time":"2024-10-05T16:25:49.636+0200","caller":"ws/control.go:200","msg":"controller bus registered"}
+{"level":"debug","time":"2024-10-05T16:25:50.382+0200","caller":"ssh/ssh.go:216","msg":"Successfully started sshd listener on port: 17807"}
+{"level":"debug","time":"2024-10-05T16:25:50.382+0200","caller":"ssh/ssh.go:216","msg":"Successfully started sshd listener on port: 30086"}
+{"level":"info","time":"2024-10-05T16:25:50.382+0200","caller":"core/lifecycle.go:393","msg":"You can start testing now"}
+{"level":"info","time":"2024-10-05T16:25:50.382+0200","caller":"core/lifecycle.go:394","msg":"Tunnel ID: 2563403"}
+{"level":"debug","time":"2024-10-05T16:25:50.382+0200","caller":"core/lifecycle.go:395","msg":"Remote Listener Started on Port 25259"}
+{"level":"debug","time":"2024-10-05T16:25:50.382+0200","caller":"ssh/ssh.go:216","msg":"Successfully started sshd listener on port: 20210"}
+{"level":"debug","time":"2024-10-05T16:25:50.400+0200","caller":"ssh/ssh.go:216","msg":"Successfully started sshd listener on port: 29855"}
+{"level":"debug","time":"2024-10-05T16:25:50.402+0200","caller":"ssh/ssh.go:216","msg":"Successfully started sshd listener on port: 5441"}
+{"level":"debug","time":"2024-10-05T16:27:15.365+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":1}
+{"level":"debug","time":"2024-10-05T16:27:20.548+0200","caller":"custom/setup.go:392","msg":"handle http request for http://r10.o.lencr.org/","tunnelID":"2563403","requestID":2}
+{"level":"debug","time":"2024-10-05T16:27:20.549+0200","caller":"custom/setup.go:392","msg":"handle http request for http://r10.o.lencr.org/","tunnelID":"2563403","requestID":3}
+{"level":"debug","time":"2024-10-05T16:27:21.176+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://firefox.settings.services.mozilla.com:443","tunnelID":"2563403","requestID":4}
+{"level":"debug","time":"2024-10-05T16:27:21.396+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://shavar.services.mozilla.com:443","tunnelID":"2563403","requestID":5}
+{"level":"debug","time":"2024-10-05T16:27:21.720+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://content-signature-2.cdn.mozilla.net:443","tunnelID":"2563403","requestID":6}
+{"level":"debug","time":"2024-10-05T16:27:23.371+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://tracking-protection.cdn.mozilla.net:443","tunnelID":"2563403","requestID":7}
+{"level":"debug","time":"2024-10-05T16:27:25.496+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":8}
+{"level":"debug","time":"2024-10-05T16:27:25.675+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":9}
+{"level":"debug","time":"2024-10-05T16:27:25.681+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":10}
+{"level":"debug","time":"2024-10-05T16:27:26.522+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":11}
+{"level":"debug","time":"2024-10-05T16:27:27.290+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":12}
+{"level":"debug","time":"2024-10-05T16:27:27.459+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":13}
+{"level":"debug","time":"2024-10-05T16:27:27.462+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":14}
+{"level":"debug","time":"2024-10-05T16:27:27.768+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":15}
+{"level":"debug","time":"2024-10-05T16:27:27.839+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":16}
+{"level":"debug","time":"2024-10-05T16:27:28.004+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":17}
+{"level":"debug","time":"2024-10-05T16:27:28.009+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":18}
+{"level":"debug","time":"2024-10-05T16:27:28.329+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":19}
+{"level":"debug","time":"2024-10-05T16:27:28.500+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":20}
+{"level":"debug","time":"2024-10-05T16:27:28.672+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":21}
+{"level":"debug","time":"2024-10-05T16:27:28.676+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":22}
+{"level":"debug","time":"2024-10-05T16:27:29.007+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":23}
+{"level":"debug","time":"2024-10-05T16:27:29.046+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":24}
+{"level":"debug","time":"2024-10-05T16:27:29.487+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":25}
+{"level":"debug","time":"2024-10-05T16:27:29.491+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":26}
+{"level":"debug","time":"2024-10-05T16:27:29.800+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":27}
+{"level":"debug","time":"2024-10-05T16:27:29.866+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":28}
+{"level":"debug","time":"2024-10-05T16:27:30.039+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":29}
+{"level":"debug","time":"2024-10-05T16:27:30.041+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":30}
+{"level":"debug","time":"2024-10-05T16:27:30.361+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":31}
+{"level":"debug","time":"2024-10-05T16:27:30.420+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":32}
+{"level":"debug","time":"2024-10-05T16:27:30.612+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":33}
+{"level":"debug","time":"2024-10-05T16:27:30.617+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":34}
+{"level":"debug","time":"2024-10-05T16:27:30.913+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":35}
+{"level":"debug","time":"2024-10-05T16:27:31.070+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":36}
+{"level":"debug","time":"2024-10-05T16:27:31.243+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":37}
+{"level":"debug","time":"2024-10-05T16:27:31.244+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":38}
+{"level":"debug","time":"2024-10-05T16:27:31.589+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":39}
+{"level":"debug","time":"2024-10-05T16:27:42.936+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":40}
+{"level":"debug","time":"2024-10-05T16:27:46.931+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://accounts.google.com:443","tunnelID":"2563403","requestID":41}
+{"level":"debug","time":"2024-10-05T16:27:46.932+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://safebrowsingohttpgateway.googleapis.com:443","tunnelID":"2563403","requestID":42}
+{"level":"debug","time":"2024-10-05T16:27:46.935+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://clientservices.googleapis.com:443","tunnelID":"2563403","requestID":43}
+{"level":"debug","time":"2024-10-05T16:27:49.244+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/about","tunnelID":"2563403","requestID":44}
+{"level":"debug","time":"2024-10-05T16:27:49.468+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":45}
+{"level":"debug","time":"2024-10-05T16:27:49.579+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":46}
+{"level":"debug","time":"2024-10-05T16:27:50.345+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/about","tunnelID":"2563403","requestID":47}
+{"level":"debug","time":"2024-10-05T16:27:50.512+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":48}
+{"level":"debug","time":"2024-10-05T16:27:50.514+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":49}
+{"level":"debug","time":"2024-10-05T16:27:50.781+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":50}
+{"level":"debug","time":"2024-10-05T16:27:50.792+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/about","tunnelID":"2563403","requestID":51}
+{"level":"debug","time":"2024-10-05T16:27:50.984+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":52}
+{"level":"debug","time":"2024-10-05T16:27:50.987+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":53}
+{"level":"debug","time":"2024-10-05T16:27:51.197+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/about","tunnelID":"2563403","requestID":54}
+{"level":"debug","time":"2024-10-05T16:27:51.396+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":56}
+{"level":"debug","time":"2024-10-05T16:27:51.396+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":55}
+{"level":"debug","time":"2024-10-05T16:28:02.435+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":57}
+{"level":"debug","time":"2024-10-05T16:28:05.532+0200","caller":"custom/setup.go:392","msg":"handle http request for http://r10.o.lencr.org/","tunnelID":"2563403","requestID":58}
+{"level":"debug","time":"2024-10-05T16:28:05.535+0200","caller":"custom/setup.go:392","msg":"handle http request for http://r10.o.lencr.org/","tunnelID":"2563403","requestID":59}
+{"level":"debug","time":"2024-10-05T16:28:05.848+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://shavar.services.mozilla.com:443","tunnelID":"2563403","requestID":60}
+{"level":"debug","time":"2024-10-05T16:28:05.993+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://firefox.settings.services.mozilla.com:443","tunnelID":"2563403","requestID":61}
+{"level":"debug","time":"2024-10-05T16:28:06.516+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://content-signature-2.cdn.mozilla.net:443","tunnelID":"2563403","requestID":62}
+{"level":"debug","time":"2024-10-05T16:28:06.520+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://content-signature-2.cdn.mozilla.net:443","tunnelID":"2563403","requestID":63}
+{"level":"debug","time":"2024-10-05T16:28:07.655+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://tracking-protection.cdn.mozilla.net:443","tunnelID":"2563403","requestID":64}
+{"level":"debug","time":"2024-10-05T16:28:09.631+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/locator-test/","tunnelID":"2563403","requestID":65}
+{"level":"debug","time":"2024-10-05T16:28:09.810+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":66}
+{"level":"debug","time":"2024-10-05T16:28:09.813+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":67}
+{"level":"debug","time":"2024-10-05T16:28:10.609+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":68}
+{"level":"debug","time":"2024-10-05T16:28:11.708+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/locator-test/","tunnelID":"2563403","requestID":69}
+{"level":"debug","time":"2024-10-05T16:28:11.875+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":70}
+{"level":"debug","time":"2024-10-05T16:28:11.878+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":71}
+{"level":"debug","time":"2024-10-05T16:28:12.406+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":72}
+{"level":"debug","time":"2024-10-05T16:28:24.476+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":73}
+{"level":"debug","time":"2024-10-05T16:28:27.625+0200","caller":"custom/setup.go:392","msg":"handle http request for http://r10.o.lencr.org/","tunnelID":"2563403","requestID":74}
+{"level":"debug","time":"2024-10-05T16:28:27.627+0200","caller":"custom/setup.go:392","msg":"handle http request for http://r10.o.lencr.org/","tunnelID":"2563403","requestID":75}
+{"level":"debug","time":"2024-10-05T16:28:27.941+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://firefox.settings.services.mozilla.com:443","tunnelID":"2563403","requestID":76}
+{"level":"debug","time":"2024-10-05T16:28:28.516+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://content-signature-2.cdn.mozilla.net:443","tunnelID":"2563403","requestID":77}
+{"level":"debug","time":"2024-10-05T16:28:31.619+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":78}
+{"level":"debug","time":"2024-10-05T16:28:31.846+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":79}
+{"level":"debug","time":"2024-10-05T16:28:31.846+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":80}
+{"level":"debug","time":"2024-10-05T16:28:32.687+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":81}
+{"level":"debug","time":"2024-10-05T16:28:32.877+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":82}
+{"level":"debug","time":"2024-10-05T16:28:33.042+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":83}
+{"level":"debug","time":"2024-10-05T16:28:33.043+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":84}
+{"level":"debug","time":"2024-10-05T16:28:33.369+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":85}
+{"level":"debug","time":"2024-10-05T16:28:33.531+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":86}
+{"level":"debug","time":"2024-10-05T16:28:33.717+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":87}
+{"level":"debug","time":"2024-10-05T16:28:33.718+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":88}
+{"level":"debug","time":"2024-10-05T16:28:34.026+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":89}
+{"level":"debug","time":"2024-10-05T16:28:34.055+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":90}
+{"level":"debug","time":"2024-10-05T16:28:34.202+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":91}
+{"level":"debug","time":"2024-10-05T16:28:34.206+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":92}
+{"level":"debug","time":"2024-10-05T16:28:34.512+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":93}
+{"level":"debug","time":"2024-10-05T16:28:34.557+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":94}
+{"level":"debug","time":"2024-10-05T16:28:34.708+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":95}
+{"level":"debug","time":"2024-10-05T16:28:34.710+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":96}
+{"level":"debug","time":"2024-10-05T16:28:35.018+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":97}
+{"level":"debug","time":"2024-10-05T16:28:35.161+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":98}
+{"level":"debug","time":"2024-10-05T16:28:35.326+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":99}
+{"level":"debug","time":"2024-10-05T16:28:35.331+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":100}
+{"level":"debug","time":"2024-10-05T16:28:35.668+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":101}
+{"level":"debug","time":"2024-10-05T16:28:46.971+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":102}
+{"level":"debug","time":"2024-10-05T16:28:49.975+0200","caller":"custom/setup.go:392","msg":"handle http request for http://r10.o.lencr.org/","tunnelID":"2563403","requestID":103}
+{"level":"debug","time":"2024-10-05T16:28:49.975+0200","caller":"custom/setup.go:392","msg":"handle http request for http://r10.o.lencr.org/","tunnelID":"2563403","requestID":104}
+{"level":"debug","time":"2024-10-05T16:28:50.291+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://firefox.settings.services.mozilla.com:443","tunnelID":"2563403","requestID":105}
+{"level":"debug","time":"2024-10-05T16:28:50.402+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://shavar.services.mozilla.com:443","tunnelID":"2563403","requestID":106}
+{"level":"debug","time":"2024-10-05T16:28:50.902+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://content-signature-2.cdn.mozilla.net:443","tunnelID":"2563403","requestID":107}
+{"level":"debug","time":"2024-10-05T16:28:50.909+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://content-signature-2.cdn.mozilla.net:443","tunnelID":"2563403","requestID":108}
+{"level":"debug","time":"2024-10-05T16:28:52.205+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://tracking-protection.cdn.mozilla.net:443","tunnelID":"2563403","requestID":109}
+{"level":"debug","time":"2024-10-05T16:28:54.071+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":110}
+{"level":"debug","time":"2024-10-05T16:28:54.241+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":111}
+{"level":"debug","time":"2024-10-05T16:28:54.244+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":112}
+{"level":"debug","time":"2024-10-05T16:28:55.051+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":113}
+{"level":"debug","time":"2024-10-05T16:28:55.147+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":114}
+{"level":"debug","time":"2024-10-05T16:28:55.343+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":115}
+{"level":"debug","time":"2024-10-05T16:28:55.348+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":116}
+{"level":"debug","time":"2024-10-05T16:28:55.631+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":117}
+{"level":"debug","time":"2024-10-05T16:28:55.711+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":118}
+{"level":"debug","time":"2024-10-05T16:28:55.894+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":119}
+{"level":"debug","time":"2024-10-05T16:28:55.895+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":120}
+{"level":"debug","time":"2024-10-05T16:28:56.200+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":121}
+{"level":"debug","time":"2024-10-05T16:28:56.262+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":122}
+{"level":"debug","time":"2024-10-05T16:28:56.434+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":123}
+{"level":"debug","time":"2024-10-05T16:28:56.452+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":124}
+{"level":"debug","time":"2024-10-05T16:28:56.739+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":125}
+{"level":"debug","time":"2024-10-05T16:29:07.945+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":126}
+{"level":"debug","time":"2024-10-05T16:29:11.567+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://safebrowsingohttpgateway.googleapis.com:443","tunnelID":"2563403","requestID":127}
+{"level":"debug","time":"2024-10-05T16:29:11.575+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://clientservices.googleapis.com:443","tunnelID":"2563403","requestID":128}
+{"level":"debug","time":"2024-10-05T16:29:11.580+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://accounts.google.com:443","tunnelID":"2563403","requestID":129}
+{"level":"debug","time":"2024-10-05T16:29:13.873+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":130}
+{"level":"debug","time":"2024-10-05T16:29:14.049+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":131}
+{"level":"debug","time":"2024-10-05T16:29:14.158+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":132}
+{"level":"debug","time":"2024-10-05T16:29:15.037+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":133}
+{"level":"debug","time":"2024-10-05T16:29:15.218+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":134}
+{"level":"debug","time":"2024-10-05T16:29:15.218+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":135}
+{"level":"debug","time":"2024-10-05T16:29:15.504+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":136}
+{"level":"debug","time":"2024-10-05T16:29:15.550+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":137}
+{"level":"debug","time":"2024-10-05T16:29:15.703+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":138}
+{"level":"debug","time":"2024-10-05T16:29:15.703+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":139}
+{"level":"debug","time":"2024-10-05T16:29:15.957+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":140}
+{"level":"debug","time":"2024-10-05T16:29:16.117+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":141}
+{"level":"debug","time":"2024-10-05T16:29:16.118+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":142}
+{"level":"debug","time":"2024-10-05T16:29:16.378+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":143}
+{"level":"debug","time":"2024-10-05T16:29:27.373+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":144}
+{"level":"debug","time":"2024-10-05T16:29:31.030+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://clientservices.googleapis.com:443","tunnelID":"2563403","requestID":145}
+{"level":"debug","time":"2024-10-05T16:29:31.052+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://safebrowsingohttpgateway.googleapis.com:443","tunnelID":"2563403","requestID":146}
+{"level":"debug","time":"2024-10-05T16:29:31.071+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://accounts.google.com:443","tunnelID":"2563403","requestID":147}
+{"level":"debug","time":"2024-10-05T16:29:33.442+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":148}
+{"level":"debug","time":"2024-10-05T16:29:33.642+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":149}
+{"level":"debug","time":"2024-10-05T16:29:33.755+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":150}
+{"level":"debug","time":"2024-10-05T16:29:34.688+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":151}
+{"level":"debug","time":"2024-10-05T16:29:34.860+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":152}
+{"level":"debug","time":"2024-10-05T16:29:34.866+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":153}
+{"level":"debug","time":"2024-10-05T16:29:35.148+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":154}
+{"level":"debug","time":"2024-10-05T16:29:35.158+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":155}
+{"level":"debug","time":"2024-10-05T16:29:35.342+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":156}
+{"level":"debug","time":"2024-10-05T16:29:35.342+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":157}
+{"level":"debug","time":"2024-10-05T16:29:35.691+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":158}
+{"level":"debug","time":"2024-10-05T16:29:35.903+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":159}
+{"level":"debug","time":"2024-10-05T16:29:35.908+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":160}
+{"level":"debug","time":"2024-10-05T16:29:36.144+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":161}
+{"level":"debug","time":"2024-10-05T16:29:36.152+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":162}
+{"level":"debug","time":"2024-10-05T16:29:36.325+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":163}
+{"level":"debug","time":"2024-10-05T16:29:36.327+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":164}
+{"level":"debug","time":"2024-10-05T16:29:36.544+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":165}
+{"level":"debug","time":"2024-10-05T16:29:36.717+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":166}
+{"level":"debug","time":"2024-10-05T16:29:36.722+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":167}
+{"level":"debug","time":"2024-10-05T16:29:36.958+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":168}
+{"level":"debug","time":"2024-10-05T16:29:37.009+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":169}
+{"level":"debug","time":"2024-10-05T16:29:37.132+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":170}
+{"level":"debug","time":"2024-10-05T16:29:37.137+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":171}
+{"level":"debug","time":"2024-10-05T16:29:37.451+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":172}
+{"level":"debug","time":"2024-10-05T16:29:37.628+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":173}
+{"level":"debug","time":"2024-10-05T16:29:37.628+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":174}
+{"level":"debug","time":"2024-10-05T16:29:37.902+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":175}
+{"level":"debug","time":"2024-10-05T16:29:48.954+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":176}
+{"level":"debug","time":"2024-10-05T16:29:52.140+0200","caller":"custom/setup.go:392","msg":"handle http request for http://r10.o.lencr.org/","tunnelID":"2563403","requestID":177}
+{"level":"debug","time":"2024-10-05T16:29:52.156+0200","caller":"custom/setup.go:392","msg":"handle http request for http://r10.o.lencr.org/","tunnelID":"2563403","requestID":178}
+{"level":"debug","time":"2024-10-05T16:29:52.627+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://shavar.services.mozilla.com:443","tunnelID":"2563403","requestID":179}
+{"level":"debug","time":"2024-10-05T16:29:53.176+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://content-signature-2.cdn.mozilla.net:443","tunnelID":"2563403","requestID":180}
+{"level":"debug","time":"2024-10-05T16:29:53.225+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://content-signature-2.cdn.mozilla.net:443","tunnelID":"2563403","requestID":181}
+{"level":"debug","time":"2024-10-05T16:29:53.233+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://content-signature-2.cdn.mozilla.net:443","tunnelID":"2563403","requestID":182}
+{"level":"debug","time":"2024-10-05T16:29:54.456+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://tracking-protection.cdn.mozilla.net:443","tunnelID":"2563403","requestID":183}
+{"level":"debug","time":"2024-10-05T16:29:56.962+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/about","tunnelID":"2563403","requestID":184}
+{"level":"debug","time":"2024-10-05T16:29:57.159+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":185}
+{"level":"debug","time":"2024-10-05T16:29:57.159+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":186}
+{"level":"debug","time":"2024-10-05T16:29:58.011+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":187}
+{"level":"debug","time":"2024-10-05T16:29:58.130+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/about","tunnelID":"2563403","requestID":188}
+{"level":"debug","time":"2024-10-05T16:29:58.332+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":189}
+{"level":"debug","time":"2024-10-05T16:29:58.354+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":190}
+{"level":"debug","time":"2024-10-05T16:29:58.675+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":191}
+{"level":"debug","time":"2024-10-05T16:29:58.727+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/about","tunnelID":"2563403","requestID":192}
+{"level":"debug","time":"2024-10-05T16:29:58.905+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":193}
+{"level":"debug","time":"2024-10-05T16:29:58.913+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":194}
+{"level":"debug","time":"2024-10-05T16:29:59.217+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":195}
+{"level":"debug","time":"2024-10-05T16:29:59.263+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/about","tunnelID":"2563403","requestID":196}
+{"level":"debug","time":"2024-10-05T16:29:59.435+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":197}
+{"level":"debug","time":"2024-10-05T16:29:59.439+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":198}
+{"level":"debug","time":"2024-10-05T16:29:59.770+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":199}
+{"level":"debug","time":"2024-10-05T16:30:10.946+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":200}
+{"level":"debug","time":"2024-10-05T16:30:14.570+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://clientservices.googleapis.com:443","tunnelID":"2563403","requestID":201}
+{"level":"debug","time":"2024-10-05T16:30:14.570+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://safebrowsingohttpgateway.googleapis.com:443","tunnelID":"2563403","requestID":202}
+{"level":"debug","time":"2024-10-05T16:30:14.606+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://accounts.google.com:443","tunnelID":"2563403","requestID":203}
+{"level":"debug","time":"2024-10-05T16:30:16.979+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/locator-test/","tunnelID":"2563403","requestID":204}
+{"level":"debug","time":"2024-10-05T16:30:17.164+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":205}
+{"level":"debug","time":"2024-10-05T16:30:17.288+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":206}
+{"level":"debug","time":"2024-10-05T16:30:18.463+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":207}
+{"level":"debug","time":"2024-10-05T16:30:19.519+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/locator-test/","tunnelID":"2563403","requestID":208}
+{"level":"debug","time":"2024-10-05T16:30:19.693+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":209}
+{"level":"debug","time":"2024-10-05T16:30:19.693+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":210}
+{"level":"debug","time":"2024-10-05T16:30:19.977+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":211}
+{"level":"debug","time":"2024-10-05T16:30:20.571+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://content-autofill.googleapis.com:443","tunnelID":"2563403","requestID":212}
+{"level":"debug","time":"2024-10-05T16:30:32.395+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":213}
+{"level":"debug","time":"2024-10-05T16:30:36.154+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://clientservices.googleapis.com:443","tunnelID":"2563403","requestID":214}
+{"level":"debug","time":"2024-10-05T16:30:36.158+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://safebrowsingohttpgateway.googleapis.com:443","tunnelID":"2563403","requestID":215}
+{"level":"debug","time":"2024-10-05T16:30:36.189+0200","caller":"custom/setup.go:588","msg":"handling connect request for URL https://accounts.google.com:443","tunnelID":"2563403","requestID":216}
+{"level":"debug","time":"2024-10-05T16:30:38.738+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":217}
+{"level":"debug","time":"2024-10-05T16:30:38.913+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":218}
+{"level":"debug","time":"2024-10-05T16:30:39.032+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":219}
+{"level":"debug","time":"2024-10-05T16:30:39.842+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":220}
+{"level":"debug","time":"2024-10-05T16:30:40.029+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":221}
+{"level":"debug","time":"2024-10-05T16:30:40.030+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":222}
+{"level":"debug","time":"2024-10-05T16:30:40.328+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":223}
+{"level":"debug","time":"2024-10-05T16:30:40.448+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":224}
+{"level":"debug","time":"2024-10-05T16:30:40.631+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":225}
+{"level":"debug","time":"2024-10-05T16:30:40.631+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":226}
+{"level":"debug","time":"2024-10-05T16:30:40.853+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":227}
+{"level":"debug","time":"2024-10-05T16:30:41.009+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":228}
+{"level":"debug","time":"2024-10-05T16:30:41.010+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":229}
+{"level":"debug","time":"2024-10-05T16:30:41.236+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":230}
+{"level":"debug","time":"2024-10-05T16:30:41.263+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":231}
+{"level":"debug","time":"2024-10-05T16:30:41.419+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":232}
+{"level":"debug","time":"2024-10-05T16:30:41.420+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":233}
+{"level":"debug","time":"2024-10-05T16:30:41.725+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/","tunnelID":"2563403","requestID":234}
+{"level":"debug","time":"2024-10-05T16:30:41.899+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/chunk-vendors.js","tunnelID":"2563403","requestID":235}
+{"level":"debug","time":"2024-10-05T16:30:41.900+0200","caller":"custom/setup.go:392","msg":"handle http request for http://localhost:8080/js/app.js","tunnelID":"2563403","requestID":236}
+{"level":"debug","time":"2024-10-05T16:30:42.183+0200","caller":"custom/setup.go:392","msg":"handle http request for http://192.168.1.6:8080/ws","tunnelID":"2563403","requestID":237}
+{"level":"debug","time":"2024-10-05T16:30:48.795+0200","caller":"core/lifecycle.go:437","msg":"Context cancelled"}
+{"level":"debug","time":"2024-10-05T16:30:48.795+0200","caller":"custom/setup.go:906","msg":"Exiting the sink proxy","tunnelID":"2563403"}
+{"level":"debug","time":"2024-10-05T16:30:48.795+0200","caller":"apiserver/setup.go:144","msg":"Shutting down the server"}
+{"level":"info","time":"2024-10-05T16:30:48.795+0200","caller":"core/lifecycle.go:439","msg":"Stopping tunnel"}
+{"level":"debug","time":"2024-10-05T16:30:48.796+0200","caller":"ws/control.go:140","msg":"Unusual close error on control channel..."}
+{"level":"debug","time":"2024-10-05T16:30:48.796+0200","caller":"ws/control.go:193","msg":"Write loop ended for control channel"}

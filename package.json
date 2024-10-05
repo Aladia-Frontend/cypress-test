@@ -5,9 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@lambdatest/smartui-storybook": "^1.1.20",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-router": "^4.4.5",
@@ -16,16 +19,28 @@
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@chromatic-com/storybook": "^1.9.0",
+    "@storybook/addon-essentials": "^8.3.5",
+    "@storybook/addon-interactions": "^8.3.5",
+    "@storybook/addon-links": "^8.3.5",
+    "@storybook/addon-onboarding": "^8.3.5",
+    "@storybook/blocks": "^8.3.5",
+    "@storybook/test": "^8.3.5",
+    "@storybook/vue3": "^8.3.5",
+    "@storybook/vue3-vite": "^8.3.5",
+    "@vitejs/plugin-vue": "^5.1.4",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "cypress": "^13.15.0",
     "cypress-xpath": "^2.0.1",
     "eslint": "^7.32.0",
+    "eslint-plugin-storybook": "^0.9.0",
     "eslint-plugin-vue": "^8.0.3",
     "mochawesome": "^7.1.3",
     "mochawesome-report-generator": "^6.2.0",
     "start-server-and-test": "^2.0.8",
+    "storybook": "^8.3.5",
     "vue-loader": "^17.3.1",
     "wait-on": "^8.0.1"
   },
@@ -36,7 +51,8 @@
     },
     "extends": [
       "plugin:vue/vue3-essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "plugin:storybook/recommended"
     ],
     "parserOptions": {
       "parser": "@babel/eslint-parser"

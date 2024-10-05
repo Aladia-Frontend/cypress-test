@@ -1,12 +1,11 @@
-import { Meta, StoryFn } from "@storybook/vue3/*";
 import LocatorTest from "./LocatorTest.vue";
 
 export default {
   title: "LocatorTest",
   component: LocatorTest,
-} as Meta;
+};
 
-const Template: StoryFn = (args) => ({
+const Template = (args) => ({
   components: { LocatorTest },
   setup() {
     return { args };
@@ -15,3 +14,4 @@ const Template: StoryFn = (args) => ({
 });
 
 export const Default = Template.bind({});
+Default.args = {};
