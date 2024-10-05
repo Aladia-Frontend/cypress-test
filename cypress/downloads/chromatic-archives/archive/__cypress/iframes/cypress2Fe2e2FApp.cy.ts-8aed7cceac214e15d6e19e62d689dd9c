@@ -254,7 +254,7 @@
 ({
       browserFamily: 'chromium',
       isSpecBridge: false,
-      key: '6f292bce-52aa-4dc9-a2ba-d542c7f4e3ee',
+      key: '56569af3-9cfc-43b0-bbc6-20c2ae0aac39',
       namespace: '__cypress',
       scripts: '["/__cypress/tests?p=cypress/support/e2e.ts","/__cypress/tests?p=cypress/e2e/App.cy.ts"]',
       url: 'http://localhost:8080/__cypress/iframes/cypress%2Fe2e%2FApp.cy.ts?browserFamily=chromium'
