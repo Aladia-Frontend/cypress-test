@@ -100,7 +100,7 @@ export default {
 .item {
     padding: 10px;
     background-color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ddd;
 }
 </style>
