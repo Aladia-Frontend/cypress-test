@@ -1,0 +1,1 @@
+{"v":5,"entries":{"locatortest--default":{"type":"story","id":"locatortest--default","name":"Default","title":"LocatorTest","importPath":"./src/components/LocatorTest.stories.ts","componentPath":"./src/components/LocatorTest.vue","tags":["dev","test"]}}}
