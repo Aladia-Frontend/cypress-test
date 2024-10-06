@@ -1,20 +1,40 @@
-name: Chromatic Deployment
+name: CI
 
 on:
   pull_request:
     branches:
-      - main
+      - "**"
 
 jobs:
-  chromatic-deployment:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
 
-      - name: Install Dependencies
-        run: pnpm install
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20"
 
-      - name: Publish to Chromatic
-        run: npx chromatic --project-token=chpt_8425323d910bbc6 --exit-once-uploaded
+      - name: Install pnpm
+        run: |
+          npm install -g pnpm
+
+      - name: Install dependencies
+        run: |
+          pnpm install
+
+      - name: Start Application
+        run: |
+          pnpm run serve &
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VITE_BASE_URL: http://localhost:8080
+
+      - name: Wait for application to start
+        run: |
+          npx wait-on http://localhost:8080

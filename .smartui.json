@@ -1,0 +1,12 @@
+{
+  "storybookUrl": "http://localhost:6006",
+  "projectToken": "2098872#b694472c-7111-46f1-aab8-ba39f2cb900b#cypress-test",
+  "storybook": {
+    "browsers": ["chrome", "firefox", "safari", "edge"],
+    "viewports": [[1920, 1080]],
+    "waitForTimeout": 3000,
+    "include": [],
+    "exclude": [],
+    "customViewports": []
+  }
+}

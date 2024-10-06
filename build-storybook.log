@@ -1,0 +1,46 @@
+
+> cypress-test@0.1.0 build-storybook
+> storybook build --output-dir=/var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B --webpack-stats-json=/var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B
+
+@storybook/core v8.3.5
+
+info => Cleaning outputDir: ../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B
+info => Loading presets
+info => Building manager..
+info => Manager built (66 ms)
+info => Building preview..
+WARN No story files found for the specified pattern: src/**/*.mdx
+[36mvite v5.4.8 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 66 modules transformed.
+rendering chunks...
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[32miframe.html                                   [39m[1m[2m 16.33 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[35mAbout-BICyCEVO.css                     [39m[1m[2m  0.09 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[35mHome-Ccy7jbqo.css                      [39m[1m[2m  0.18 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[35mNavBar--mtvGZU3.css                    [39m[1m[2m  0.19 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[35mLocatorTest-Cakz2J-g.css               [39m[1m[2m  0.92 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36m_plugin-vue_export-helper-DlAUqK2U.js  [39m[1m[2m  0.09 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mpreview-CIRcjyVj.js                    [39m[1m[2m  0.11 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mpreview-DYzi3Z2p.js                    [39m[1m[2m  0.16 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mAbout-BjRortzy.js                      [39m[1m[2m  0.56 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mAbout.stories-CbZtFtdA.js              [39m[1m[2m  0.60 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mLocatorTest.stories-U-BGhCrU.js        [39m[1m[2m  0.64 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mHome.stories-MvOZ7tUM.js               [39m[1m[2m  0.67 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mpreview-caVMbCIR.js                    [39m[1m[2m  0.69 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mindex-DrFu-skq.js                      [39m[1m[2m  0.77 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mLocatorTest-DposKOsx.js                [39m[1m[2m  1.43 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mNavBar.stories-BNXnJZzk.js             [39m[1m[2m  1.63 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mentry-preview-nZz1OVoP.js              [39m[1m[2m  2.22 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mpreview-bAry8KZa.js                    [39m[1m[2m  2.47 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mHome-DK0wVfvf.js                       [39m[1m[2m  2.74 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mpreview-DHPc-V4N.js                    [39m[1m[2m  3.40 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36miframe-B9aO2LLb.js                     [39m[1m[2m  4.30 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mpreview-ncvtW_hb.js                    [39m[1m[2m  4.84 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mpreview-BWzBA1C2.js                    [39m[1m[2m  7.62 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mpreview-CuLlOZat.js                    [39m[1m[2m  8.08 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mvue.esm-bundler-CaavvnnE.js            [39m[1m[2m169.08 kB[22m[1m[22m
+[2m../../../../var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/[22m[2massets/[22m[36mpreview-Bns9NJER.js                    [39m[1m[33m542.73 kB[39m[22m
+[32m✓ built in 866ms[39m
+info => Preview built (957 ms)
+info => preview stats written to /var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B/preview-stats.json
+info => Output directory: /var/folders/q6/pl8jqmxd2jq14np3zp4hy1sm0000gn/T/chromatic--64782-QcXl0e8uyG2B

@@ -6,16 +6,15 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script>
 import NavBar from './components/NavBar.vue';
 
-export default defineComponent({
+export default {
   name: 'App',
   components: {
     NavBar,
   }
-});
+};
 </script>
 
 <style>

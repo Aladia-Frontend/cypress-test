@@ -67,7 +67,6 @@ export default {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    /* Center the buttons */
 }
 
 .primary-button {
@@ -101,6 +100,6 @@ export default {
     padding: 10px;
     background-color: #fff;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 10px solid #ff0000;
 }
 </style>
