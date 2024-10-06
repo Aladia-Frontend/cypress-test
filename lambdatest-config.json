@@ -38,7 +38,9 @@
       "eslint-plugin-vue": "^8.0.3"
     },
     "smart_ui": {
-      "project": "cypress-test"
+      "project": "cypress-test",
+      "build": "new-build-name",
+      "baseline": false
     }
   },
   "tunnel_settings": {
