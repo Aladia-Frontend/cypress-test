@@ -57,13 +57,6 @@ jobs:
       - name: Run Cypress Tests with Applitools
         env:
           APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
-          APPLITOOLS_FAIL_CYPRESS_ON_DIFF: false
-        run: |
-          ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 pnpm cypress run --e2e
-
-      - name: Run Cypress Tests with Applitools
-        env:
-          APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
           APPLITOOLS_BATCH_ID: ${{ github.sha }}
           APPLITOOLS_FAIL_CYPRESS_ON_DIFF: false
         run: |
