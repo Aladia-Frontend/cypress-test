@@ -25,9 +25,6 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
 
-      - name: Install dependencies
-        run: pnpm install
-
       - name: Cache pnpm modules
         uses: actions/cache@v2
         with:
@@ -35,6 +32,9 @@ jobs:
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Build Eyes Storybook
         env:
