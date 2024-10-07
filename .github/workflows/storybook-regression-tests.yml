@@ -42,7 +42,7 @@ jobs:
         run: pnpm install --store=.pnpm-store
 
       - name: Install Puppeteer Browsers
-        run: npx puppeteer install
+        run: npx puppeteer browsers install chrome
 
       - name: Build Eyes Storybook
         env:
