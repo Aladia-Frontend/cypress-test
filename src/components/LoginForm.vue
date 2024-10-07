@@ -1,6 +1,6 @@
 <template>
     <div class="login-form">
-        <Textbox v-model="email" placeholder="Email" />
+        <Textbox v-model="email" placeholder="Indirizzo" />
         <Textbox v-model="password" placeholder="Password" type="password" />
         <Button label="Login" @click="login" />
     </div>
