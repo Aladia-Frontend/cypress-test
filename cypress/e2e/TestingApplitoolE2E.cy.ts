@@ -26,7 +26,7 @@ describe("Vue Application E2E Tests", () => {
 
     it("renders the Login Form correctly", () => {
       cy.get("nav a").contains("Login").click();
-      cy.get("input[placeholder='Indirizzo']").should("exist");
+      cy.get("input[placeholder='Email']").should("exist");
       cy.get("input[placeholder='Password']").should("exist");
       cy.get("button").contains("Login").should("exist");
       cy.eyesCheckWindow({ tag: "Login Form" }); // Visual AI Checkpoint
