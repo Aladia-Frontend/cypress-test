@@ -33,6 +33,7 @@
     "@vue/cli-plugin-typescript": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "chromatic": "^11.11.0",
     "sass": "^1.79.4",
     "sass-loader": "^16.0.2",
     "storybook": "^8.3.5",
