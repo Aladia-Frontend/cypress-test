@@ -41,6 +41,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --store=.pnpm-store
 
+      - name: Rebuild Puppeteer
+        run: pnpm rebuild puppeteer
+
       - name: Install Puppeteer Browsers
         run: npx puppeteer browsers install chrome
 
