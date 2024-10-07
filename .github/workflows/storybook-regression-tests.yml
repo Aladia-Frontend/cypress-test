@@ -1,4 +1,3 @@
-# File: .github/workflows/component-visual-regression.yml
 name: Component Visual Regression Tests
 
 on:
@@ -13,30 +12,43 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: "20"
+          cache: "pnpm"
 
       - name: Install pnpm
         run: npm install -g pnpm
 
-      - name: Cache pnpm modules
-        uses: actions/cache@v2
+      - name: Cache pnpm store and node_modules
+        uses: actions/cache@v3
         with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          path: |
+            node_modules
+            .pnpm-store
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-pnpm-
+            ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --store=.pnpm-store
 
       - name: Build Eyes Storybook
         env:
           APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
         run: npx eyes-storybook
+
+      - name: Run Cypress Tests with Applitools
+        env:
+          APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
+          APPLITOOLS_BATCH_ID: ${{ github.sha }}
+          APPLITOOLS_FAIL_CYPRESS_ON_DIFF: false
+        run: |
+          ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 pnpm cypress run --e2e
+
+      - name: Notify Applitools Batch Completion
+        if: always()
+        run: |
+          curl -d "" -X POST https://eyesapi.applitools.com/api/externals/github/servers/github.com/commit/${{ env.APPLITOOLS_BATCH_ID }}/complete?apiKey=${{ secrets.APPLITOOLS_API_KEY }}
