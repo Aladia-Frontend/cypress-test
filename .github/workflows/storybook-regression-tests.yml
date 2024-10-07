@@ -37,4 +37,6 @@ jobs:
             ${{ runner.os }}-pnpm-
 
       - name: Build Eyes Storybook
+        env:
+          APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
         run: npx eyes-storybook

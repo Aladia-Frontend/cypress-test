@@ -48,5 +48,7 @@ jobs:
           npx wait-on http://localhost:8080
 
       - name: Run Cypress Tests with Applitools
+        env:
+          APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
         run: |
           ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 pnpm cypress run --e2e
