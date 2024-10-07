@@ -28,5 +28,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build Storybook
-        run: pnpm run build-storybook
+      - name: Build Eyes Storybook
+        run: npx eyes-storybook
