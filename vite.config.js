@@ -3,8 +3,13 @@ import vue from "@vitejs/plugin-vue";
 export default {
   resolve: {
     alias: {
-      "@": "/src", // Ensure this alias points to the src directory
+      "@": "/src",
     },
   },
   plugins: [vue()],
+  build: {
+    rollupOptions: {
+      external: ["cypress-xpath"],
+    },
+  },
 };
