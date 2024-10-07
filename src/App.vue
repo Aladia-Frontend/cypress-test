@@ -27,7 +27,7 @@ export default defineComponent({
 }
 
 nav {
-  padding: 35px;
+  padding: 30px;
 }
 
 nav a {

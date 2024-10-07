@@ -28,5 +28,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Cache pnpm modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
       - name: Build Eyes Storybook
         run: npx eyes-storybook
