@@ -6,7 +6,7 @@ describe("Vue Application E2E Tests", () => {
       cy.get("button").should("exist");
       cy.get("button").should("have.class", "storybook-button");
       cy.get("button").should("contain.text", "Login");
-      cy.eyesCheckWindow({ tag: "Button Component" }); // Visual AI Checkpoint
+      cy.eyesCheckWindow({ tag: "Button Component" });
     });
 
     it("navigates to the About page", () => {
@@ -14,7 +14,7 @@ describe("Vue Application E2E Tests", () => {
       cy.get("nav a").contains("About").click();
       cy.url().should("include", "/about");
       cy.get("h1").should("contain.text", "This is an about page");
-      cy.eyesCheckWindow({ tag: "About Page" }); // Visual AI Checkpoint
+      cy.eyesCheckWindow({ tag: "About Page" });
     });
 
     it("navigates to the Login page", () => {
