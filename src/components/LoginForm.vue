@@ -2,7 +2,7 @@
     <div class="login-form">
         <Textbox v-model="email" placeholder="Indirizzo Email" />
         <Textbox v-model="password" placeholder="Parola D'ordine" type="password" />
-        <Button label="Login" @click="login" />
+        <Button label="Accedi" @click="login" />
     </div>
 </template>
 

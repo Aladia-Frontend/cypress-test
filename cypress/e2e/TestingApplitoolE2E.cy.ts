@@ -5,7 +5,7 @@ describe("Vue Application E2E Tests", () => {
     it("renders the Button component and checks functionality", () => {
       cy.get("button").should("exist");
       cy.get("button").should("have.class", "storybook-button");
-      cy.get("button").should("contain.text", "Login");
+      cy.get("button").should("contain.text", "Accedi");
       cy.eyesCheckWindow({ tag: "Button Component" });
     });
 
@@ -19,16 +19,16 @@ describe("Vue Application E2E Tests", () => {
 
     it("navigates to the Login page", () => {
       cy.get("nav").should("exist");
-      cy.get("nav a").contains("Login").click();
+      cy.get("nav a").contains("Accedi").click();
       cy.url().should("include", "/login");
       cy.eyesCheckWindow({ tag: "Login Page" }); // Visual AI Checkpoint
     });
 
     it("renders the Login Form correctly", () => {
-      cy.get("nav a").contains("Login").click();
+      cy.get("nav a").contains("Accedi").click();
       cy.get("input[placeholder='Indirizzo Email']").should("exist");
       cy.get("input[placeholder='Parola D\\'ordine']").should("exist");
-      cy.get("button").contains("Login").should("exist");
+      cy.get("button").contains("Accedi").should("exist");
       cy.eyesCheckWindow({ tag: "Login Form" }); // Visual AI Checkpoint
     });
   };
