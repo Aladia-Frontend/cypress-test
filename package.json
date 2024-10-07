@@ -17,6 +17,7 @@
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "@applitools/eyes-storybook": "^3.50.9",
     "@chromatic-com/storybook": "^1.9.0",
     "@storybook/addon-essentials": "^8.3.5",
     "@storybook/addon-interactions": "^8.3.5",
