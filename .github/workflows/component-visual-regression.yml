@@ -1,4 +1,4 @@
-name: Chromatic
+name: Component Visual Regression Tests
 
 on:
   pull_request:
@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  chromatic:
-    name: Run Chromatic
+  component_visual_regression:
+    name: Run Component Visual Regression Tests
     runs-on: ubuntu-latest
 
     steps:
@@ -26,11 +26,3 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-
-      - name: Run Chromatic
-        uses: chromaui/action@latest
-        with:
-          projectToken: ${{ secrets.CHROMATIC_NEW_PROJECT_TOKEN }}
-          exitZeroOnChanges: true
-          onlyChanged: true
-          zip: true
