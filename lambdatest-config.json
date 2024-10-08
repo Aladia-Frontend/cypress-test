@@ -8,43 +8,23 @@
       "browser": "Chrome",
       "platform": "Windows 10",
       "versions": ["latest-1"]
-    },
-    {
-      "browser": "Firefox",
-      "platform": "Windows 10",
-      "versions": ["latest-1"]
     }
   ],
   "run_settings": {
     "reporter_config_file": "base_reporter_config.json",
-    "build_name": "testing-lambdatest-again",
+    "build_name": "Cypress 10",
     "parallels": 1,
-    "specs": "cypress/e2e/**/*.cy.js",
+    "specs": "cypress/e2e/1-getting-started/todo.cy.js",
     "ignore_files": "",
     "network": false,
     "headless": false,
     "npm_dependencies": {
-      "cypress": "^13.15.0",
-      "cypress-xpath": "^2.0.1",
-      "mochawesome": "^7.1.3",
-      "mochawesome-report-generator": "^6.2.0",
-      "start-server-and-test": "^2.0.8",
-      "@babel/core": "^7.12.16",
-      "@babel/eslint-parser": "^7.12.16",
-      "@vue/cli-plugin-babel": "~5.0.0",
-      "@vue/cli-plugin-eslint": "~5.0.0",
-      "@vue/cli-service": "~5.0.0",
-      "eslint": "^7.32.0",
-      "eslint-plugin-vue": "^8.0.3"
-    },
-    "smart_ui": {
-      "project": "cypress-test",
-      "build": "new-build-name",
-      "baseline": false
+      "cypress": "10.0.0",
+      "typescript": "^5.0.4"
     }
   },
   "tunnel_settings": {
-    "tunnel": true,
-    "tunnel_name": "LT_Tunnel"
+    "tunnel": false,
+    "tunnel_name": null
   }
 }
