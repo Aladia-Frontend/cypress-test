@@ -1,0 +1,11 @@
+{
+  "storybook": {
+    "browsers": ["chrome", "firefox", "safari", "edge"],
+    "viewports": [[1920, 1080]],
+    "waitForTimeout": 3000,
+    "include": [],
+    "exclude": [],
+    "customViewports": [],
+    "projectToken": "JichtefGealv5wYesemuZkPVJAWMbuPplyaxuEjSZOQZWh9mIk"
+  }
+}
