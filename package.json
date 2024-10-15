@@ -9,7 +9,6 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@cypress/vite-dev-server": "^5.2.0",
     "@vue/test-utils": "^2.4.6",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
@@ -17,6 +16,7 @@
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "@cypress/vite-dev-server": "^5.2.0",
     "@storybook/addon-essentials": "^8.3.5",
     "@storybook/addon-interactions": "^8.3.5",
     "@storybook/addon-links": "^8.3.5",

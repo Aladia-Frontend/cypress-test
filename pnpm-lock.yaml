@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@cypress/vite-dev-server':
-        specifier: ^5.2.0
-        version: 5.2.0
       '@vue/test-utils':
         specifier: ^2.4.6
         version: 2.4.6
@@ -27,6 +24,9 @@ importers:
         specifier: ^4.0.0
         version: 4.1.0(vue@3.5.11(typescript@4.5.5))
     devDependencies:
+      '@cypress/vite-dev-server':
+        specifier: ^5.2.0
+        version: 5.2.0
       '@storybook/addon-essentials':
         specifier: ^8.3.5
         version: 8.3.5(storybook@8.3.5)(webpack-sources@3.2.3)

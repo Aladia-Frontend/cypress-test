@@ -12,19 +12,29 @@
   ],
   "run_settings": {
     "reporter_config_file": "base_reporter_config.json",
-    "build_name": "Cypress 10",
     "parallels": 1,
-    "specs": "cypress/e2e/1-getting-started/todo.cy.js",
+    "specs": "cypress/e2e/**/*.cy.ts",
     "ignore_files": "",
-    "network": false,
+    "network": true,
+    "build_name": "feat/new-lambdatest",
+    "project_name": "feat/new-lambdatest",
+    "smart_ui": {
+      "project": "feat/new-lambdatest",
+      "build": "feat/new-lambdatest",
+      "baseline": false
+    },
     "headless": false,
     "npm_dependencies": {
+      "cypress-vite": "^1.5.0",
+      "@cypress/vite-dev-server": "^5.2.0",
       "cypress": "10.0.0",
-      "typescript": "^5.0.4"
+      "typescript": "^5.0.4",
+      "@vitejs/plugin-vue": "^5.1.4",
+      "cypress-xpath": "^2.0.1"
     }
   },
   "tunnel_settings": {
-    "tunnel": false,
-    "tunnel_name": null
+    "tunnel": true,
+    "tunnel_name": "LT"
   }
 }
